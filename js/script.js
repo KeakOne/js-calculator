@@ -12,21 +12,25 @@ function calc(digit){
     
     if (digit == "sum"){
         console.log(eval(result)) ;
+        $("#resultBox").append(result);
     }
     else if (digit == "-"){
-    	result + "-";
+    	result += "-";
     }
     else if (digit == "+"){
-    	result + "+";
+    	result += "+";
     }
     else if (digit == "*"){
-    	result + "*";
+    	result += "*";
     }
     else if (digit == "/"){
-    	result + "/";
+    	result += "/";
     }
     else if (digit == "."){
-    	result + ".";
+    	result += ".";
+    }
+    else if (digit == "%"){
+    	result += "%";
     }
     else if (digit == "clear"){
     	location.reload();
@@ -36,6 +40,8 @@ function calc(digit){
     }
 
 }
+
+//append result everytime a button is clicke to resultBox
 
 
 	
